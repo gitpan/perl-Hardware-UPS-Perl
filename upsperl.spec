@@ -20,7 +20,7 @@ PreReq:        %insserv_prereq
 Requires:      perl = %{perl_version}
 Conflicts:     apcupsd nut
 Autoreqprov:   on
-Version:       0.41
+Version:       0.42
 Release:       1
 Distribution:  SuSE Linux 10.1 (i586)
 URL:           -
@@ -82,6 +82,7 @@ make DESTDIR=$RPM_BUILD_ROOT install_vendor
 
 %changelog -n perl-Hardware-UPS-Perl
 * Sat Apr 14 2007 - Christian.Reile@t-online.de
+- upgrade to version 0.42
 - upgrade to version 0.41
 * Sat Apr 07 2007 - Christian.Reile@t-online.de
 - upgrade to version 0.40

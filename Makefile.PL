@@ -17,15 +17,18 @@
 #==============================================================================
 # Entries for Revision Control:
 #------------------------------------------------------------------------------
-# Revision        : $Revision: 1.7 $
+# Revision        : $Revision: 1.8 $
 # Author          : $Author: creile $
-# Last Modified On: $Date: 2007/04/14 09:37:26 $
+# Last Modified On: $Date: 2007/04/14 17:16:13 $
 # Status          : $State: Exp $
 #------------------------------------------------------------------------------
 # Modifications   :
 #------------------------------------------------------------------------------
 #
 # $Log: Makefile.PL,v $
+# Revision 1.8  2007/04/14 17:16:13  creile
+# update to package version 0.42.
+#
 # Revision 1.7  2007/04/14 09:37:26  creile
 # documentation update.
 #
@@ -112,7 +115,7 @@ extra_install:
 WriteMakefile(
 	NAME		=> 'Hardware::UPS::Perl',
 	DISTNAME	=> 'perl-Hardware-UPS-Perl',
-	VERSION      	=> '0.41',
+	VERSION      	=> '0.42',
 	PREREQ_PM 	=> {
 				'Carp'			=> 0,
 				'constant'		=> 0,

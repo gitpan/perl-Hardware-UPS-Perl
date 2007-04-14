@@ -17,7 +17,7 @@ upsagent - enables remote control over a local UPS on a serial device
 
 =head1 SYNOPSIS
 
-B<usv>
+B<upsagent>
 S<[ B<-h>, B<--help> ]> S<[ B<-M>, B<--man> ]> S<[ B<-V>, B<--version> ]>
 S<[ B<-d>, B<--debug-level> [I<debuglevel>] ]>
 S<[ B<-L>, B<--logfile> [I<logfile>] ]>
@@ -47,7 +47,7 @@ Displays a short usage help message and exits without errors.
 
 =item B<-M>, B<--man>
 
-Displays the embedded pod documentation of B<usv> (this screen) using
+Displays the embedded pod documentation of B<upsagent> (this screen) using
 B<pod2man>, B<groff> and B<less> as pager; it exits without errors.
 
 =item B<-V>, B<--version>
@@ -126,15 +126,18 @@ Christian Reile, Christian.Reile@t-online.de
 #==============================================================================
 # Entries for revision control:
 #------------------------------------------------------------------------------
-# Revision        : $Revision: 1.9 $
+# Revision        : $Revision: 1.10 $
 # Author          : $Author: creile $
-# Last Modified On: $Date: 2007/04/14 09:37:26 $
+# Last Modified On: $Date: 2007/04/14 16:48:19 $
 # Status          : $State: Exp $
 #------------------------------------------------------------------------------
 # Modifications   :
 #------------------------------------------------------------------------------
 #
 # $Log: upsagent.pl,v $
+# Revision 1.10  2007/04/14 16:48:19  creile
+# documentation bugfix.
+#
 # Revision 1.9  2007/04/14 09:37:26  creile
 # documentation update.
 #
@@ -267,12 +270,12 @@ sub Init {
 
     # revision number
     use constant REVISION_VERSION   => sprintf(
-        "%d.%02d",     q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/
+        "%d.%02d",     q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/
     );
 
     # revison date
     use constant REVISION_DATE      => sprintf(
-        "%d/%02d/%02d", q$Date: 2007/04/14 09:37:26 $ =~ /(\d+)\/(\d+)\/(\d+)/
+        "%d/%02d/%02d", q$Date: 2007/04/14 16:48:19 $ =~ /(\d+)\/(\d+)\/(\d+)/
     );
 
     # initializing buffers

@@ -1,4 +1,4 @@
-# $Id: Changes,v 1.5 2007/04/14 09:37:26 creile Exp $
+# $Id: Changes,v 1.6 2007/04/14 17:17:51 creile Exp $
 
 Changelog for Hardware-UPS-Perl:
 
@@ -26,4 +26,7 @@ Changelog for Hardware-UPS-Perl:
 
 0.41 2007/04/14
    * minor bugfixes
+
+0.42 2007/04/14
+   * ducumentation bugfix in upsagent.pl.
  
