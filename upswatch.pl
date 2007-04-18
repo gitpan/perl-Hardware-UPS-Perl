@@ -175,15 +175,18 @@ Christian Reile, Christian.Reile@t-online.de
 #==============================================================================
 # Entries for revision control:
 #------------------------------------------------------------------------------
-# Revision        : $Revision: 1.12 $
+# Revision        : $Revision: 1.13 $
 # Author          : $Author: creile $
-# Last Modified On: $Date: 2007/04/14 09:37:26 $
+# Last Modified On: $Date: 2007/04/17 19:53:49 $
 # Status          : $State: Exp $
 #------------------------------------------------------------------------------
 # Modifications   :
 #------------------------------------------------------------------------------
 #
 # $Log: upswatch.pl,v $
+# Revision 1.13  2007/04/17 19:53:49  creile
+# unnecessary comments removed.
+#
 # Revision 1.12  2007/04/14 09:37:26  creile
 # documentation update.
 #
@@ -303,7 +306,6 @@ use vars qw(
 # defining subroutines:
 #==============================================================================
 
-# initializing
 sub Init {
 
     # subroutine for initializing the working environment
@@ -313,12 +315,12 @@ sub Init {
 
     # revision number
     use constant REVISION_VERSION   => sprintf(
-        "%d.%02d",      q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/
+        "%d.%02d",      q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/
     );
 
     # revison date
     use constant REVISION_DATE      => sprintf(
-        "%d/%02d/%02d", q$Date: 2007/04/14 09:37:26 $ =~ /(\d+)\/(\d+)\/(\d+)/
+        "%d/%02d/%02d", q$Date: 2007/04/17 19:53:49 $ =~ /(\d+)\/(\d+)\/(\d+)/
     );
 
     # the default driver
@@ -332,7 +334,7 @@ sub Init {
 
 } # end of subroutine "Init"
 
-# getting and checking options
+
 sub GetParameters {
 
     # subroutine for getting and checking options
@@ -472,7 +474,7 @@ sub GetParameters {
 
 } # end of subroutine "GetParameters"
 
-# displaying usage help
+
 sub Usage {
 
     # subroutine for displaying a short usage help and exiting, if

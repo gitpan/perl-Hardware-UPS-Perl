@@ -31,15 +31,18 @@ package Hardware::UPS::Perl::Connection;
 #==============================================================================
 # Entries for Revision Control:
 #==============================================================================
-# Revision        : $Revision: 1.5 $
+# Revision        : $Revision: 1.6 $
 # Author          : $Author: creile $
-# Last Modified On: $Date: 2007/04/14 09:37:26 $
+# Last Modified On: $Date: 2007/04/17 19:45:01 $
 # Status          : $State: Exp $
 #------------------------------------------------------------------------------
 # Modifications   :
 #------------------------------------------------------------------------------
 #
 #   $Log: Connection.pm,v $
+#   Revision 1.6  2007/04/17 19:45:01  creile
+#   missing import of Hardware::UPS::Perl::Logging added.
+#
 #   Revision 1.5  2007/04/14 09:37:26  creile
 #   documentation update.
 #
@@ -73,7 +76,7 @@ BEGIN {
     
     use vars qw($VERSION @ISA);
 
-    $VERSION = sprintf( "%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/ );
+    $VERSION = sprintf( "%d.%02d", q$Revision: 1.6 $ =~ /(\d+)\.(\d+)/ );
 
     @ISA     = qw();
 
@@ -89,6 +92,8 @@ BEGIN {
 #
 #   Hardware::UPS::Perl::General    - importing Hardware::UPS::Perl variables
 #                                     and functions for scripts
+#   Hardware::UPS::Perl::Logging    - importing Hardware::UPS::Perl methods
+#                                     dealing with logfiles
 #   Hardware::UPS::Perl::Utils      - importing Hardware::UPS::Perl utility
 #                                     functions for packages
 #
@@ -97,6 +102,7 @@ BEGIN {
 use Hardware::UPS::Perl::General qw(
     $UPSERROR
 );
+use Hardware::UPS::Perl::Logging;
 use Hardware::UPS::Perl::Utils qw(
     error
 );

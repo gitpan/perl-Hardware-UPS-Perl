@@ -36,15 +36,18 @@ package Hardware::UPS::Perl::General;
 #==============================================================================
 # Entries for Revision Control:
 #==============================================================================
-# Revision        : $Revision: 1.14 $
+# Revision        : $Revision: 1.15 $
 # Author          : $Author: creile $
-# Last Modified On: $Date: 2007/04/14 09:37:26 $
+# Last Modified On: $Date: 2007/04/17 19:46:00 $
 # Status          : $State: Exp $
 #------------------------------------------------------------------------------
 # Modifications   :
 #------------------------------------------------------------------------------
 #
 #   $Log: General.pm,v $
+#   Revision 1.15  2007/04/17 19:46:00  creile
+#   documentation bugfixes.
+#
 #   Revision 1.14  2007/04/14 09:37:26  creile
 #   documentation update.
 #
@@ -115,7 +118,7 @@ BEGIN {
     use Exporter ();
     use vars     qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS);
 
-    $VERSION     = sprintf( "%d.%02d", q$Revision: 1.14 $ =~ /(\d+)\.(\d+)/ );
+    $VERSION     = sprintf( "%d.%02d", q$Revision: 1.15 $ =~ /(\d+)\.(\d+)/ );
 
     @ISA         = qw(Exporter);
     @EXPORT      = qw(
@@ -146,7 +149,10 @@ use vars @EXPORT, @EXPORT_OK;
 #------------------------------------------------------------------------------
 #
 #   POSIX                           - Perl interface to IEEE Std 1003.1
+#
+#   Hardware::UPS::Perl::Connection - importing Hardware::UPS::Perl connection
 #   Hardware::UPS::Perl::Constants  - importing Hardware::UPS::Perl constants
+#   Hardware::UPS::Perl::Driver     - importing Hardware::UPS::Perl driver
 #
 #==============================================================================
 

@@ -126,15 +126,18 @@ Christian Reile, Christian.Reile@t-online.de
 #==============================================================================
 # Entries for revision control:
 #------------------------------------------------------------------------------
-# Revision        : $Revision: 1.10 $
+# Revision        : $Revision: 1.11 $
 # Author          : $Author: creile $
-# Last Modified On: $Date: 2007/04/14 16:48:19 $
+# Last Modified On: $Date: 2007/04/17 19:52:44 $
 # Status          : $State: Exp $
 #------------------------------------------------------------------------------
 # Modifications   :
 #------------------------------------------------------------------------------
 #
 # $Log: upsagent.pl,v $
+# Revision 1.11  2007/04/17 19:52:44  creile
+# unnecessary comments removed.
+#
 # Revision 1.10  2007/04/14 16:48:19  creile
 # documentation bugfix.
 #
@@ -260,7 +263,6 @@ use vars qw(
 # defining subroutines:
 #==============================================================================
 
-# initializing
 sub Init {
 
     # subroutine for initializing the working environment
@@ -270,12 +272,12 @@ sub Init {
 
     # revision number
     use constant REVISION_VERSION   => sprintf(
-        "%d.%02d",     q$Revision: 1.10 $ =~ /(\d+)\.(\d+)/
+        "%d.%02d",     q$Revision: 1.11 $ =~ /(\d+)\.(\d+)/
     );
 
     # revison date
     use constant REVISION_DATE      => sprintf(
-        "%d/%02d/%02d", q$Date: 2007/04/14 16:48:19 $ =~ /(\d+)\/(\d+)\/(\d+)/
+        "%d/%02d/%02d", q$Date: 2007/04/17 19:52:44 $ =~ /(\d+)\/(\d+)\/(\d+)/
     );
 
     # initializing buffers
@@ -296,7 +298,7 @@ sub Init {
 
 } # end of subroutine "Init"
 
-# getting and checking options
+
 sub GetParameters {
 
     # subroutine for getting and checking options
@@ -399,7 +401,7 @@ sub GetParameters {
 
 } # end of subroutine "GetParameters"
 
-# displaying usage help
+
 sub Usage {
 
     # subroutine for displaying a short usage help and exiting, if

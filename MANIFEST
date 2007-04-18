@@ -16,6 +16,7 @@ lib/Hardware/UPS/Perl/PID.pm
 lib/Hardware/UPS/Perl/Utils.pm
 suse/upsperld.sh
 suse/upsperld.sysconfig
+t/simple.t
 upsagent.pl
 upsadm.pl
 upsperl.spec

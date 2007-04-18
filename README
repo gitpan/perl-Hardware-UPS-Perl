@@ -1,4 +1,4 @@
-$Id: README,v 1.3 2007/02/03 20:54:49 creile Exp $
+$Id: README,v 1.4 2007/04/18 15:22:06 creile Exp $
 
 Hardware-UPS-Perl provides Perl modules and scripts to deal with an UPS using
 an arbitrary Hardware::UPS::Perl driver. So far, the package only supplies a
@@ -19,11 +19,19 @@ Hardware-UPS-Perl has been developed and tested using a TRUST PW-4120M UPS.
 
 INSTALLATION
 
-To install this module, run the following commands:
+To install this package, run the following commands:
 
     perl Makefile.PL
     make
+    make test
     make install
+
+In case of SuSE 10.1 and above (and propably below) you can also build
+an RPM by running
+
+   rpmbuild -ta perl-Hardware-UPS-Perl-${VERSION}.tar.gz
+
+and install the resulting RPM afterwards directly using rpm.
 
 
 COPYRIGHT AND LICENCE

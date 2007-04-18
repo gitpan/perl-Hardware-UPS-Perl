@@ -1,7 +1,7 @@
 # http://module-build.sourceforge.net/META-spec.html
 #XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
 name:         perl-Hardware-UPS-Perl
-version:      0.42
+version:      0.43
 version_from: 
 installdirs:  site
 requires:
@@ -26,6 +26,7 @@ requires:
     POSIX:                         0
     strict:                        0
     Sys::Syslog:                   0
+    Test::Simple:                  0
     Tie::RefHash:                  0
     Time::HiRes:                   0
     vars:                          0

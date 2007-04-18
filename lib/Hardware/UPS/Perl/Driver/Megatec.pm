@@ -73,15 +73,18 @@ package Hardware::UPS::Perl::Driver::Megatec;
 #==============================================================================
 # Entries for Revision Control:
 #==============================================================================
-# Revision        : $Revision: 1.12 $
+# Revision        : $Revision: 1.13 $
 # Author          : $Author: creile $
-# Last Modified On: $Date: 2007/04/14 09:38:14 $
+# Last Modified On: $Date: 2007/04/17 19:43:42 $
 # Status          : $State: Exp $
 #------------------------------------------------------------------------------
 # Modifications   :
 #------------------------------------------------------------------------------
 #
 #   $Log: Megatec.pm,v $
+#   Revision 1.13  2007/04/17 19:43:42  creile
+#   documentation bugfixes.
+#
 #   Revision 1.12  2007/04/14 09:38:14  creile
 #   documentation update.
 #
@@ -155,7 +158,7 @@ BEGIN {
 
     use vars qw($VERSION @ISA);
 
-    $VERSION = sprintf( "%d.%02d", q$Revision: 1.12 $ =~ /(\d+)\.(\d+)/ );
+    $VERSION = sprintf( "%d.%02d", q$Revision: 1.13 $ =~ /(\d+)\.(\d+)/ );
 
     @ISA     = qw();
 
@@ -1981,18 +1984,18 @@ UPS using the Megatec protocol
 
     $logger     = Hardware::UPS::Perl::Logging->new();
 
-    $connection = Hardware::UPS::Perl::Connection->new(
+    $connection = Hardware::UPS::Perl::Connection->new({
         Connection  =>  'serial',
-        Options     =>  [
+        Options     =>  {
                             SerialPort  => '/dev/ttyS0',
-                        ],
+                        },
         Logger      =>  $logger,
-    );
+    });
 
-    $ups  = Hardware::UPS::Perl::Driver::Megatec->new(
+    $ups  = Hardware::UPS::Perl::Driver::Megatec->new({
         Connection  =>  $connection,
         Logger      =>  $logger,
-    );
+    });
 
     $ups->readUPSInfo();
     $ups->printUPSInfo();
@@ -2221,14 +2224,14 @@ connect - connects to an UPS
     $ups = Hardware::UPS::Perl::Driver::Megatec->new();
     $ups->connect($port);   # serial connection
 
-    $ups = Hardware::UPS::Perl::Driver::Megatec->new(
+    $ups = Hardware::UPS::Perl::Driver::Megatec->new({
         Connection  => "serial"
-    );
+    });
     $ups->connect($port);   # serial connection
 
-    $ups = Hardware::UPS::Perl::Driver::Megatec->new(
+    $ups = Hardware::UPS::Perl::Driver::Megatec->new({
         Connection  => "tcp"
-    );
+    });
     $ups->connect();        # TCP connection
     $ups->connect({         # TCP connection
         Host    => $host,

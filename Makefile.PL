@@ -17,15 +17,19 @@
 #==============================================================================
 # Entries for Revision Control:
 #------------------------------------------------------------------------------
-# Revision        : $Revision: 1.8 $
+# Revision        : $Revision: 1.9 $
 # Author          : $Author: creile $
-# Last Modified On: $Date: 2007/04/14 17:16:13 $
+# Last Modified On: $Date: 2007/04/17 19:49:28 $
 # Status          : $State: Exp $
 #------------------------------------------------------------------------------
 # Modifications   :
 #------------------------------------------------------------------------------
 #
 # $Log: Makefile.PL,v $
+# Revision 1.9  2007/04/17 19:49:28  creile
+# prerequisite package Test::Simple added;
+# update to version 0.43.
+#
 # Revision 1.8  2007/04/14 17:16:13  creile
 # update to package version 0.42.
 #
@@ -115,7 +119,7 @@ extra_install:
 WriteMakefile(
 	NAME		=> 'Hardware::UPS::Perl',
 	DISTNAME	=> 'perl-Hardware-UPS-Perl',
-	VERSION      	=> '0.42',
+	VERSION      	=> '0.43',
 	PREREQ_PM 	=> {
 				'Carp'			=> 0,
 				'constant'		=> 0,
@@ -138,6 +142,7 @@ WriteMakefile(
 				'POSIX'			=> 0,
 				'Sys::Syslog'		=> 0,
 				'strict'		=> 0,
+				'Test::Simple'		=> 0,
 				'Tie::RefHash'		=> 0,
 				'Time::HiRes'		=> 0,
 				'vars'  		=> 0,

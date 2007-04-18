@@ -31,15 +31,18 @@ package Hardware::UPS::Perl::PID;
 #==============================================================================
 # Entries for Revision Control:
 #==============================================================================
-# Revision        : $Revision: 1.8 $
+# Revision        : $Revision: 1.9 $
 # Author          : $Author: creile $
-# Last Modified On: $Date: 2007/04/14 09:37:26 $
+# Last Modified On: $Date: 2007/04/17 19:47:48 $
 # Status          : $State: Exp $
 #------------------------------------------------------------------------------
 # Modifications   :
 #------------------------------------------------------------------------------
 #
 #   $Log: PID.pm,v $
+#   Revision 1.9  2007/04/17 19:47:48  creile
+#   documentation bugfixes.
+#
 #   Revision 1.8  2007/04/14 09:37:26  creile
 #   documentation update.
 #
@@ -83,7 +86,7 @@ BEGIN {
     
     use vars qw($VERSION @ISA);
 
-    $VERSION = sprintf( "%d.%02d", q$Revision: 1.8 $ =~ /(\d+)\.(\d+)/ );
+    $VERSION = sprintf( "%d.%02d", q$Revision: 1.9 $ =~ /(\d+)\.(\d+)/ );
 
     @ISA     = qw();
 
@@ -538,10 +541,10 @@ Hardware::UPS::Perl::PID - package for OO PID files.
     $Pid->setLogger($Logger);
     $Logger = $Pid->getLogger();
 
-    $Pid = Hardware::UPS::Perl::PID->new(
+    $Pid = Hardware::UPS::Perl::PID->new({
         PIDFile =>  "/var/run/ups.pid"
         Logger  =>  $Logger,
-    );
+    });
 
     $pid = $Pid->getPID();
     $pidFile = $Pid->getPIDFile();
